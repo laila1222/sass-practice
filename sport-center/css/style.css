@@ -1,0 +1,99 @@
+*, *::before, *::after {
+  padding: 0;
+  margin: 0; }
+
+html {
+  font-size: 62.5%; }
+
+body {
+  box-sizing: border-box;
+  padding: 3rem; }
+
+@keyframes scaleIn {
+  0% {
+    opacity: 0;
+    transform: scale(0.9); }
+  100% {
+    opacity: 1;
+    transform: scale(1); } }
+
+.u-center-middle {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%); }
+
+.u-margin-bottom-small {
+  margin-bottom: 2rem; }
+
+body {
+  font-family: 'Enriqueta', serif;
+  font-weight: 400;
+  line-height: 1.7;
+  color: #3c4243; }
+
+.heading-primary {
+  width: auto;
+  text-align: center;
+  text-transform: uppercase;
+  color: #f1f1f1; }
+  .heading-primary--main {
+    display: block;
+    font-family: 'Neuton', serif;
+    font-size: 5rem;
+    font-weight: 400;
+    letter-spacing: 2rem;
+    margin-bottom: 1rem; }
+  .heading-primary--sub {
+    display: block;
+    font-size: 2.5rem;
+    font-family: 'Enriqueta', serif;
+    letter-spacing: .7rem; }
+
+.button, .button:link, .button:visited {
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 1.6rem;
+  padding: 2rem 2.5rem;
+  border-radius: 10rem;
+  display: inline-block;
+  margin-top: 2rem;
+  box-shadow: 0 1rem 1rem rgba(0, 0, 0, 0.2);
+  transition: all .2s;
+  cursor: pointer; }
+  .button:hover, .button:link:hover, .button:visited:hover {
+    transform: translateY(3px);
+    box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.5); }
+  .button:active, .button:focus, .button:link:active, .button:link:focus, .button:visited:active, .button:visited:focus {
+    outline: none;
+    transform: translateY(-1px);
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2); }
+
+.button--white {
+  color: #3c4243;
+  background-color: #fff; }
+
+.header {
+  height: 90vh; }
+  .header__bg-video {
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+    opacity: .95;
+    z-index: -1; }
+    .header__bg-video-content {
+      height: 100%;
+      width: 100%;
+      object-fit: cover; }
+  .header__logo-container {
+    width: 20rem;
+    position: absolute;
+    top: 3rem;
+    left: 5rem; }
+  .header__logo {
+    filter: invert(100%) brightness(1.5); }
+  .header__text-container {
+    top: 45%;
+    text-align: center; }
+  .header__button-container {
+    margin: 0 auto; }

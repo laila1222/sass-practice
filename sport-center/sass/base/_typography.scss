@@ -1,0 +1,46 @@
+@import "../abstracts/variables";
+
+// Fonts
+// font-family: 'Neuton', serif;
+// font-family: 'Pontano Sans', sans-serif;
+// font-family: 'Enriqueta', serif;
+
+
+body {
+    font-family: 'Enriqueta', serif;
+    font-weight: 400;
+    line-height: 1.7;
+    color: $color-grey-dark;
+}
+
+.heading-primary {
+    width: auto;
+    text-align: center;
+    text-transform: uppercase;
+
+    color: $color-white-secondary;
+
+    animation-name: scaleIn;
+    animation-duration: 1.5s;
+    animation-timing-function: ease-in-out;
+    
+
+
+    &--main {
+        display: block;
+        font-family: 'Neuton', serif;
+        font-size: 5rem;
+        font-weight: 400;
+        letter-spacing: 2rem;
+        margin-bottom: 1rem;
+
+
+    }
+
+    &--sub {
+        display: block;
+        font-size: 2.5rem;
+        font-family: 'Enriqueta', serif;
+        letter-spacing: .7rem;
+    }
+}

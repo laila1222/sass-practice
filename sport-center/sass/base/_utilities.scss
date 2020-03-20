@@ -1,0 +1,11 @@
+// Center to middle of parent, horizontally and vertically
+.u-center-middle {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.u-margin-bottom-small {
+    margin-bottom: 2rem;
+}
