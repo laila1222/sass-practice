@@ -4,6 +4,7 @@
   "description": "Website for sport centers",
   "main": "index.js",
   "dependencies": {
+    "aos": "^3.0.0-beta.6",
     "node-sass": "^4.13.1"
   },
   "devDependencies": {},
