@@ -11,15 +11,17 @@
 }
 
 .u-margin-bottom-big {
-    margin-bottom: 6rem;
+    margin-bottom: 10rem;
 }
 
 .u-margin-top-big {
     margin-top: 8rem;
 }
 
-.u-flex {
+.u-flex-even {
     display: flex;
+    justify-content: space-evenly;
+
 }
 
 .u-center-text {
