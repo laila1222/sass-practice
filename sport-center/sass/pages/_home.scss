@@ -21,3 +21,28 @@
     background-color: $color-beige;
     padding: 15rem 0 25rem 0;
 }
+
+.section-stories {
+    padding: 15rem 0;
+    position: relative;
+
+
+
+    .bg-image {
+        background-image: url(../images/relaxation.jpg);
+        // background-position: ;
+        // background-color: burlywood;
+        background-size: cover;
+        background-position: center;
+        opacity: .2;
+        width: 100%;
+        height: -webkit-fill-available;
+        z-index: -1;
+        position: absolute;
+        top: 0;
+        left: 0;
+
+    }
+    
+
+}

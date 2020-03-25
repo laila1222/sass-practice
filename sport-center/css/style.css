@@ -29,6 +29,9 @@ body {
 .u-margin-bottom-big {
   margin-bottom: 10rem; }
 
+.u-margin-bottom-medium {
+  margin-bottom: 6rem; }
+
 .u-margin-top-big {
   margin-top: 8rem; }
 
@@ -271,6 +274,52 @@ body {
   .card__button {
     padding: 2rem 3rem !important; }
 
+.story {
+  width: 75%;
+  margin-left: auto;
+  margin-right: auto;
+  box-shadow: 0 3rem 6rem rgba(0, 0, 0, 0.1);
+  background-color: rgba(255, 255, 255, 0.6);
+  border-radius: 3px;
+  padding: 6rem;
+  padding-left: 9rem;
+  font-size: 1.6rem;
+  position: relative; }
+  .story__shape {
+    width: 15rem;
+    height: 15rem;
+    -webkit-shape-outside: circle(50% at 50% 50%);
+    shape-outside: circle(50% at 50% 50%);
+    -webkit-clip-path: circle(50% at 50% 50%);
+    clip-path: circle(50% at 50% 50%);
+    position: relative; }
+  .story__caption {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, 20%);
+    color: #fff;
+    font-size: 1.7rem;
+    text-transform: uppercase;
+    text-align: center;
+    opacity: 0;
+    transition: all .5s;
+    backface-visibility: hidden; }
+  .story__text {
+    margin: 0 5rem; }
+  .story:hover .story__caption {
+    opacity: 1;
+    transform: translate(-50%, -50%); }
+  .story__image {
+    width: 15rem;
+    position: relative;
+    top: -4rem;
+    transform: scale(1.4);
+    transition: all .5s; }
+  .story:hover .story__image {
+    transform: scale(1.1);
+    filter: blur(3px) brightness(80%); }
+
 .header {
   height: 90vh; }
   .header__bg-video {
@@ -313,3 +362,18 @@ body {
 .section-plans {
   background-color: #f0f3ff;
   padding: 15rem 0 25rem 0; }
+
+.section-stories {
+  padding: 15rem 0;
+  position: relative; }
+  .section-stories .bg-image {
+    background-image: url(../images/relaxation.jpg);
+    background-size: cover;
+    background-position: center;
+    opacity: .2;
+    width: 100%;
+    height: -webkit-fill-available;
+    z-index: -1;
+    position: absolute;
+    top: 0;
+    left: 0; }
