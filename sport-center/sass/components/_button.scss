@@ -35,6 +35,17 @@
     color: $color-grey-dark;
     background-color: $color-white-primary;
   }
+
+  &--orange {
+    background-image: linear-gradient(
+      to right bottom,
+      rgba($color-secondary-light, 0.5),
+      rgba($color-secondary, 0.4)
+    );
+    color: $color-grey-dark;
+
+
+  }
 }
 
 .button-text {

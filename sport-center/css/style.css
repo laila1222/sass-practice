@@ -112,6 +112,10 @@ body {
   color: #3c4243;
   background-color: #fff; }
 
+.button--orange {
+  background-image: linear-gradient(to right bottom, rgba(245, 202, 133, 0.5), rgba(255, 130, 56, 0.4));
+  color: #3c4243; }
+
 .button-text:link, .button-text:visited {
   font-size: 1.6rem;
   color: #046ef6;
