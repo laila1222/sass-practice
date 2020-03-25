@@ -1,48 +1,41 @@
 .section-about {
-    padding: 15rem 0 25rem 0;
-    background-color: $color-beige;
-
+  padding: 15rem 0 25rem 0;
+  background-color: $color-beige;
 }
 
 .section-features {
-    
-    padding: 20rem 0;
-    background-image: linear-gradient(
-        to right bottom,
-        rgba($color-primary-light-2, .5),
-        rgba($color-primary-dark, .5)
-    ), 
+  padding: 20rem 0;
+  background-image: linear-gradient(
+      to right bottom,
+      rgba($color-primary-light-2, 0.5),
+      rgba($color-primary-dark, 0.5)
+    ),
     url(../images/pool.jpg);
-    background-size: cover;
+  background-size: cover;
 }
 
-
 .section-plans {
-    background-color: $color-beige;
-    padding: 15rem 0 25rem 0;
+  background-color: $color-beige;
+  padding: 15rem 0 15rem 0;
 }
 
 .section-stories {
-    padding: 15rem 0;
-    position: relative;
+  padding: 15rem 0;
+  position: relative;
 
-
-
-    .bg-image {
-        background-image: url(../images/relaxation.jpg);
-        // background-position: ;
-        // background-color: burlywood;
-        background-size: cover;
-        background-position: center;
-        opacity: .2;
-        width: 100%;
-        height: -webkit-fill-available;
-        z-index: -1;
-        position: absolute;
-        top: 0;
-        left: 0;
-
-    }
-    
-
+  .bg-image {
+    background-image: url(../images/relaxation.jpg);
+    // background-position: ;
+    // background-color: burlywood;
+    background-size: cover;
+    background-position: center;
+    opacity: 0.2;
+    width: 100%;
+    height: -webkit-fill-available;
+    z-index: -1;
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
 }
+
