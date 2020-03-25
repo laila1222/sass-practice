@@ -42,6 +42,9 @@ body {
 .u-center-text {
   text-align: center; }
 
+.u-no-border {
+  border: none; }
+
 body {
   font-family: 'Enriqueta', serif;
   font-weight: 400;
@@ -117,7 +120,13 @@ body {
 
 .button--orange {
   background-image: linear-gradient(to right bottom, rgba(245, 202, 133, 0.5), rgba(255, 130, 56, 0.4));
-  color: #3c4243; }
+  color: #375758;
+  font-weight: 700; }
+
+.button--blue {
+  background-image: linear-gradient(to right bottom, rgba(69, 129, 205, 0.5), rgba(4, 110, 246, 0.5));
+  color: #fff;
+  font-weight: 700; }
 
 .button-text:link, .button-text:visited {
   font-size: 1.6rem;
@@ -320,6 +329,82 @@ body {
     transform: scale(1.1);
     filter: blur(3px) brightness(80%); }
 
+.form__group:not(:last-child) {
+  margin-bottom: 2rem; }
+
+.form__input {
+  font-size: 1.5rem;
+  font-family: inherit;
+  color: inherit;
+  padding: 1.5rem 2rem;
+  border-radius: 2px;
+  background-color: rgba(255, 255, 255, 0.5);
+  border: none;
+  border-bottom: 3px solid transparent;
+  width: 80%;
+  display: block;
+  transition: all 0.3; }
+  .form__input:focus {
+    outline: none;
+    box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.1);
+    border-bottom: 3px solid #046ef6; }
+  .form__input:focus:invalid {
+    border-bottom: 3px solid #ff8238; }
+  .form__input::-webkit-input-placeholder {
+    color: #3c4243; }
+
+.form__label {
+  font-size: 1.2rem;
+  font-weight: 700;
+  margin-left: 2rem;
+  margin-top: 0.7rem;
+  display: block;
+  transition: all 0.3s; }
+
+.form__input:placeholder-shown + .form__label {
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(-4rem); }
+
+.form__radio-group {
+  width: 49%;
+  display: inline-block; }
+
+.form__radio-input {
+  display: none; }
+
+.form__radio-label {
+  font-size: 1.6rem;
+  cursor: pointer;
+  position: relative;
+  padding-left: 4.5rem; }
+
+.form__radio-button {
+  height: 3rem;
+  width: 3rem;
+  border: 5px solid #046ef6;
+  border-radius: 50%;
+  display: inline-block;
+  position: absolute;
+  left: 0;
+  top: -.4rem; }
+  .form__radio-button::after {
+    height: 1.3rem;
+    width: 1.3rem;
+    content: "";
+    display: block;
+    border-radius: 50%;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #046ef6;
+    opacity: 0;
+    transition: opacity .2s; }
+
+.form__radio-input:checked ~ .form__radio-label .form__radio-button::after {
+  opacity: 1; }
+
 .header {
   height: 90vh; }
   .header__bg-video {
@@ -377,3 +462,22 @@ body {
     position: absolute;
     top: 0;
     left: 0; }
+
+.section-book {
+  padding: 15rem 0;
+  background-image: linear-gradient(to right bottom, rgba(69, 129, 205, 0.5), rgba(7, 54, 116, 0.8)); }
+
+.book {
+  background-image: linear-gradient(105deg, rgba(255, 255, 255, 0.9) 0%, rgba(255, 255, 255, 0.9) 50%, transparent 50%), url(../images/swimming.jpg);
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-position: 0 20%;
+  opacity: .8;
+  border-radius: 3px;
+  box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.15);
+  height: 50rem;
+  max-width: 114rem;
+  margin: 0 auto; }
+  .book__form {
+    width: 50%;
+    padding: 6rem; }
