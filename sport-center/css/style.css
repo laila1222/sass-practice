@@ -159,23 +159,113 @@ body {
 
 .feature-box {
   background-color: rgba(255, 255, 255, 0.8);
-  font-size: 1.5rem;
+  font-size: 1.7rem;
   padding: 2.5rem;
   text-align: center;
   border-radius: 3px;
   box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.15);
-  margin: 0 2rem; }
-  .feature-box:first-child {
-    margin-left: 4rem; }
-  .feature-box:last-child {
-    margin-right: 4rem; }
+  max-width: 20%;
+  transition: transform 0.3s; }
   .feature-box__icon {
-    font-size: 4rem;
+    font-size: 6rem;
     margin-bottom: 0.5rem;
     display: inline-block;
     background-image: linear-gradient(to right, #4581cd, #073674);
     color: transparent;
     -webkit-background-clip: text; }
+  .feature-box:hover {
+    transform: translateY(-1.5rem) scale(1.03); }
+  .feature-box .heading-tertiary {
+    font-size: 2rem; }
+
+.card {
+  width: 20%;
+  height: 52rem;
+  position: relative;
+  perspective: 150rem;
+  -moz-perspective: 150rem; }
+  .card__side {
+    height: 52rem;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    transition: all 0.8s ease;
+    backface-visibility: hidden;
+    overflow: hidden;
+    border-radius: 3px;
+    box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.15); }
+    .card__side--front {
+      background-image: linear-gradient(to right bottom, rgba(245, 202, 133, 0.5), rgba(255, 130, 56, 0.4)); }
+    .card__side--back {
+      transform: rotateY(-180deg);
+      background-image: linear-gradient(to right bottom, rgba(245, 202, 133, 0.9), rgba(255, 130, 56, 0.9)); }
+  .card:hover .card__side--front {
+    transform: rotateY(180deg); }
+  .card:hover .card__side--back {
+    transform: rotateY(0deg); }
+  .card__picture {
+    background-size: cover;
+    height: 23rem;
+    background-blend-mode: screen;
+    border-top-left-radius: 3px;
+    border-bottom-right-radius: 3px; }
+    .card__picture--1 {
+      background-image: url(../images/massage2.jpg); }
+    .card__picture--2 {
+      background-image: url(../images/detox.jpg);
+      background-position: 100% 70%; }
+    .card__picture--3 {
+      background-image: url(../images/workout.jpg);
+      background-position: 100% 100%; }
+    .card__picture--4 {
+      background-image: url(../images/pool.jpg);
+      background-position: 0% 100%; }
+  .card__heading {
+    font-size: 2.8rem;
+    font-weight: 300;
+    text-transform: uppercase;
+    text-align: left;
+    color: #fff;
+    position: absolute;
+    top: 12rem;
+    left: 1rem;
+    width: 75%; }
+    .card__heading-span {
+      padding: 1rem 1.5rem;
+      -webkit-box-decoration-break: clone;
+      box-decoration-break: clone; }
+      .card__heading-span--1 {
+        background-image: linear-gradient(to right bottom, rgba(47, 78, 117, 0.85), rgba(69, 129, 205, 0.85)); }
+    .card__heading--juice {
+      top: 16.7rem; }
+  .card__details {
+    padding: 3rem; }
+    .card__details ul {
+      list-style: none;
+      width: 80%;
+      margin: 0 auto; }
+    .card__details li {
+      text-align: center;
+      font-size: 1.6rem;
+      padding: 1rem; }
+      .card__details li:not(:last-child) {
+        border-bottom: 1px solid rgba(175, 191, 211, 0.5); }
+  .card__cta {
+    width: 90%;
+    text-align: center; }
+  .card__price-box {
+    text-align: center;
+    margin-bottom: 8rem;
+    color: #f1f1f1; }
+  .card__price-only {
+    font-size: 2rem;
+    text-transform: uppercase; }
+  .card__price-value {
+    font-size: 6rem;
+    font-weight: 100; }
+  .card__button {
+    padding: 2rem 3rem !important; }
 
 .header {
   height: 90vh; }
@@ -213,5 +303,9 @@ body {
 
 .section-features {
   padding: 20rem 0;
-  background-image: linear-gradient(to right bottom, rgba(69, 129, 205, 0.8), rgba(7, 54, 116, 0.8)), url(../images/pool.jpg);
+  background-image: linear-gradient(to right bottom, rgba(69, 129, 205, 0.5), rgba(7, 54, 116, 0.5)), url(../images/pool.jpg);
   background-size: cover; }
+
+.section-plans {
+  background-color: #f0f3ff;
+  padding: 15rem 0 25rem 0; }
