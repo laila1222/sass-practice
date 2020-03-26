@@ -5,68 +5,84 @@
 // font-family: 'Pontano Sans', sans-serif;
 // font-family: 'Enriqueta', serif;
 
-
 body {
-    font-family: 'Enriqueta', serif;
-    font-weight: 400;
-    line-height: 1.7;
-    color: $color-grey-dark;
+  font-family: "Enriqueta", serif;
+  font-weight: 400;
+  line-height: 1.7;
+  color: $color-grey-dark;
 }
 
 .heading-primary {
-    width: auto;
-    text-align: center;
-    text-transform: uppercase;
+  width: auto;
+  text-align: center;
+  text-transform: uppercase;
 
-    color: $color-white-secondary;
+  color: $color-white-secondary;
 
-    animation-name: scaleIn;
-    animation-duration: 1.5s;
-    animation-timing-function: ease-in-out;
-    
+  animation-name: scaleIn;
+  animation-duration: 1.5s;
+  animation-timing-function: ease-in-out;
 
+  &--main {
+    display: block;
+    font-family: "Neuton", serif;
+    font-size: 5rem;
+    font-weight: 400;
+    letter-spacing: 2rem;
+    margin-bottom: 1rem;
 
-    &--main {
-        display: block;
-        font-family: 'Neuton', serif;
-        font-size: 5rem;
-        font-weight: 400;
-        letter-spacing: 2rem;
-        margin-bottom: 1rem;
-
-
+    @include respond(phone) {
+      letter-spacing: 1rem;
+      font-size: 4rem;
     }
+  }
 
-    &--sub {
-        display: block;
-        font-size: 2.5rem;
-        font-family: 'Enriqueta', serif;
-        letter-spacing: .7rem;
+  &--sub {
+    display: block;
+    font-size: 2.5rem;
+    font-family: "Enriqueta", serif;
+    letter-spacing: 0.7rem;
+
+    @include respond(phone) {
+      letter-spacing: 0.5rem;
+      font-size: 1.5rem;
     }
+  }
 }
 
 .heading-secondary {
-    font-size: 3.5rem;
-    text-transform: uppercase;
-    font-weight: 700;
-    // Linear gradient color for font
-    background-image: linear-gradient(to right, $color-primary-dark, $color-primary-light);
-    display: inline-block;
-    -webkit-background-clip: text;
-    color: transparent;
-    letter-spacing: 2px;  
+  font-size: 3.5rem;
+  text-transform: uppercase;
+  font-weight: 700;
+  // Linear gradient color for font
+  background-image: linear-gradient(
+    to right,
+    $color-primary-dark,
+    $color-primary-light
+  );
+  display: inline-block;
+  -webkit-background-clip: text;
+  color: transparent;
+  letter-spacing: 2px;
+
+  @include respond(tab-port) {
+    font-size: 3rem;
+  }
+
+  @include respond(phone) {
+    font-size: 2.5rem;
+  }
 }
 
 .heading-tertiary {
-    font-size: $default-font-size;
-    font-weight: 700;
-    text-transform: uppercase;
-
+  font-size: $default-font-size;
+  font-weight: 700;
+  text-transform: uppercase;
 }
 
 .paragraph {
-    font-size: $default-font-size;
-    &:not(:last-child) {
-        margin-bottom: 3rem;
-    }
+  font-size: $default-font-size;
+  &:not(:last-child) {
+    margin-bottom: 3rem;
+  }
 }

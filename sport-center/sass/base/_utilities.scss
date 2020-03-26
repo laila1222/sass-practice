@@ -29,7 +29,10 @@
 .u-flex-even {
     display: flex;
     justify-content: space-evenly;
+}
 
+.u-flex-wrap {
+    flex-wrap: wrap;
 }
 
 .u-center-text {

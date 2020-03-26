@@ -1,3 +1,21 @@
-.col-1-of-2 {
-    width: 40%;
+.w-40 {
+  width: 40%;
+}
+
+.w-51-tablet {
+  @include respond(tab-port) {
+    width: 51% !important;
+  }
+}
+
+.w-80-tablet {
+  @include respond(tab-port) {
+    width: 80% !important;
+  }
+}
+
+.w-100-phone {
+  @include respond(phone) {
+    width: 100% !important;
+  }
 }

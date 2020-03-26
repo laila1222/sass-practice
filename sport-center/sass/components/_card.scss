@@ -6,6 +6,10 @@
   perspective: 150rem;
   -moz-perspective: 150rem;
 
+  @include respond(tab-port) {
+    margin-bottom: 10rem;
+  }
+
   &__side {
     height: 52rem;
     position: absolute;
@@ -24,7 +28,6 @@
         rgba($color-secondary-light, 0.5),
         rgba($color-secondary, 0.4)
       );
-
     }
 
     &--back {
@@ -84,6 +87,10 @@
     left: 1rem;
     width: 75%;
 
+    @include respond(tab-port) {
+      top: 16.7rem;
+    }
+
     &-span {
       padding: 1rem 1.5rem;
       -webkit-box-decoration-break: clone;
@@ -136,7 +143,6 @@
   &__price-only {
     font-size: 2rem;
     text-transform: uppercase;
-
   }
 
   &__price-value {
@@ -145,7 +151,6 @@
   }
 
   &__button {
-      padding: 2rem 3rem !important;
+    padding: 2rem 3rem !important;
   }
-
 }

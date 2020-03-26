@@ -1,6 +1,18 @@
 .composition {
   position: relative;
 
+  @include respond(tab-port) {
+    margin: 15rem auto 45rem auto;
+    
+  }
+
+
+  @include respond(phone) {
+    margin: 5rem 1rem 25rem 1rem;
+    
+    
+  }
+
   &__image {
     height: 20rem;
     position: absolute;
@@ -8,18 +20,31 @@
     border-radius: 2px;
     transition: all 0.3s;
 
+    @include respond(tab-port) {
+      left: 5rem;
+      
+    }
+
     &--1 {
       top: 21rem;
       left: 31rem;
       height: auto;
       width: 13.5rem;
+
+      @include respond(tab-port) {
+        left: 36rem;
+        
+      }
     }
 
-    &--2 {
-    }
 
     &--3 {
       left: 14.5rem;
+
+      @include respond(tab-port) {
+        left: 19.5rem;
+        
+      }
     }
 
     &--4 {
