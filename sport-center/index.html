@@ -15,6 +15,36 @@
     <title>Ipsum Retreat</title>
   </head>
   <body>
+    <div class="navigation">
+      <input type="checkbox" class="navigation__checkbox" id="navi-toggle" />
+
+      <label for="navi-toggle" class="navigation__button">
+        <span class="navigation__icon">&nbsp;</span>
+      </label>
+
+      <div class="navigation__background">&nbsp;</div>
+
+      <nav class="navigation__nav">
+        <ul class="navigation__list">
+          <li class="navigation__item">
+            <a href="#section-about" class="navigation__link">About Ipsum Resort</a>
+          </li>
+          <li class="navigation__item">
+            <a href="#section-features" class="navigation__link">Your benefits</a>
+          </li>
+          <li class="navigation__item">
+            <a href="#section-plans" class="navigation__link">Popular plans</a>
+          </li>
+          <li class="navigation__item">
+            <a href="#section-stories" class="navigation__link">Reviews</a>
+          </li>
+          <li class="navigation__item">
+            <a href="#popup" class="navigation__link">Book now</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+
     <header class="header">
       <div class="header__bg-video">
         <video class="header__bg-video-content" autoplay mute loop>
@@ -163,7 +193,7 @@
                     <p class="card__price-only">Spring discount</p>
                     <p class="card__price-value">750€</p>
                   </div>
-                  <a href="#" class="button button--white card__button"
+                  <a href="#popup" class="button button--white card__button"
                     >Book now!</a
                   >
                 </div>
@@ -193,7 +223,7 @@
                     <p class="card__price-only">Spring discount</p>
                     <p class="card__price-value">490€</p>
                   </div>
-                  <a href="#" class="button button--white card__button"
+                  <a href="#popup" class="button button--white card__button"
                     >Book now!</a
                   >
                 </div>
@@ -222,7 +252,7 @@
                     <p class="card__price-only">Spring discount</p>
                     <p class="card__price-value">890€</p>
                   </div>
-                  <a href="#" class="button button--white card__button"
+                  <a href="#popup" class="button button--white card__button"
                     >Book now!</a
                   >
                 </div>
@@ -250,7 +280,7 @@
                     <p class="card__price-only">Spring discount</p>
                     <p class="card__price-value">548€</p>
                   </div>
-                  <a href="#" class="button button--white card__button"
+                  <a href="#popup" class="button button--white card__button"
                     >Book now!</a
                   >
                 </div>
@@ -372,7 +402,7 @@
                 </div>
               </div>
 
-              <div class="form__group">
+              <div class="form__group u-margin-top-small">
                 <button class="button button--blue u-no-border">
                   Next step &rarr;
                 </button>
@@ -424,34 +454,33 @@
       </div>
     </footer>
 
-    <div class="navigation">
-      <input type="checkbox" class="navigation__checkbox" id="navi-toggle" />
-
-      <label for="navi-toggle" class="navigation__button">
-        <span class="navigation__icon">&nbsp;</span>
-      </label>
-
-      <div class="navigation__background">&nbsp;</div>
-
-      <nav class="navigation__nav">
-        <ul class="navigation__list">
-          <li class="navigation__item">
-            <a href="#" class="navigation__link">About Ipsum Resort</a>
-          </li>
-          <li class="navigation__item">
-            <a href="#" class="navigation__link">Your benefits</a>
-          </li>
-          <li class="navigation__item">
-            <a href="#" class="navigation__link">Popular plans</a>
-          </li>
-          <li class="navigation__item">
-            <a href="#" class="navigation__link">Reviews</a>
-          </li>
-          <li class="navigation__item">
-            <a href="#" class="navigation__link"><Book now</a>
-          </li>
-        </ul>
-      </nav>
+    <div class="popup" id="popup">
+      <div class="popup__content">
+        <div class="popup__left">
+          <img src="images/food2.jpg" alt="food photo" class="popup__img" />
+        </div>
+        <div class="popup__right">
+          <a href="#section-tours" class="popup__close">&times;</a>
+          <h2 class="heading-secondary u u-margin-bottom-small">
+            Start booking now
+          </h2>
+          <h3 class="heading-tertiary  u-margin-bottom-small">
+            Important &ndash; Please read these terms before booking.
+          </h3>
+          <p class="popup__text">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero ex
+            vitae, necessitatibus dolor pariatur harum aliquid libero! Vero, ut
+            similique unde, atque vel totam ipsum quos quia corrupti repudiandae
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quas
+            praesentium totam suscipit. Accusamus rem consectetur voluptatem
+            repellendus assumenda impedit ratione recusandae, odit dolore quia
+            quos dicta! Ducimus quo culpa numquam?
+          </p>
+          <a href="#popup" class="button button--blue button--animated"
+            >Book now</a
+          >
+        </div>
+      </div>
     </div>
 
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
