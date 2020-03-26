@@ -42,7 +42,7 @@
       rgba($color-secondary-light, 0.5),
       rgba($color-secondary, 0.4)
     );
-    color: $color-grey-light;
+    color: $color-grey-dark;
     font-weight: 700;
 
 
@@ -54,7 +54,7 @@
   &--blue {
     background-image: linear-gradient(
       to right bottom,
-      rgba($color-primary-light-1, .5),
+      rgba($color-primary-light, .5),
       rgba($color-primary, .5)
     );
     color: $color-white-primary;

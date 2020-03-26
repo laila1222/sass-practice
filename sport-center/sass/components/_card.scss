@@ -91,8 +91,8 @@
       &--1 {
         background-image: linear-gradient(
           to right bottom,
-          rgba($color-primary-medium, 0.85),
-          rgba($color-primary-light-1, 0.85)
+          rgba($color-primary, 0.85),
+          rgba($color-primary-light, 0.85)
         );
       }
     }
@@ -117,7 +117,7 @@
       padding: 1rem;
 
       &:not(:last-child) {
-        border-bottom: 1px solid rgba($color-grey-lighter, 0.5);
+        border-bottom: 1px solid rgba($color-grey-light, 0.5);
       }
     }
   }
