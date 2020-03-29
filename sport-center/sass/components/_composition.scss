@@ -2,7 +2,7 @@
   position: relative;
 
   @include respond(tab-port) {
-    margin: 15rem auto 45rem auto;
+    display: none;
     
   }
 
@@ -20,35 +20,23 @@
     border-radius: 2px;
     transition: all 0.3s;
 
-    @include respond(tab-port) {
-      left: 5rem;
-      
-    }
+
 
     &--1 {
-      top: 21rem;
-      left: 31rem;
+      top: 22rem;
+      left: 32rem;
       height: auto;
       width: 13.5rem;
-
-      @include respond(tab-port) {
-        left: 36rem;
-        
-      }
     }
 
 
     &--3 {
-      left: 14.5rem;
+      left: 15.5rem;
 
-      @include respond(tab-port) {
-        left: 19.5rem;
-        
-      }
     }
 
     &--4 {
-      top: 21rem;
+      top: 22rem;
       height: auto;
       width: 30rem;
     }

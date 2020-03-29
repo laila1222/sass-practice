@@ -8,8 +8,14 @@
   }
 }
 
-.w-80-tablet {
-  @include respond(tab-port) {
+.w-90-tablet {
+    @include respond(tab-port) {
+        width: 90% !important;
+      }
+}
+
+.w-80-phone {
+  @include respond(phone) {
     width: 80% !important;
   }
 }

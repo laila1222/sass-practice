@@ -9,8 +9,15 @@
   transition: transform 0.3s;
 
   @include respond(tab-port) {
-    margin-bottom: 5rem;
     padding: 5rem;
+    margin-left: 3rem;
+    margin-right: 3rem;
+
+    &:not(:last-child) {
+      margin-bottom: 5rem;
+    }
+    
+    
   }
 
 

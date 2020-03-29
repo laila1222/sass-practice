@@ -6,10 +6,6 @@
   perspective: 150rem;
   -moz-perspective: 150rem;
 
-  @include respond(tab-port) {
-    margin-bottom: 10rem;
-  }
-
   &__side {
     height: 52rem;
     position: absolute;
@@ -21,6 +17,10 @@
     overflow: hidden;
     border-radius: 3px;
     box-shadow: 0 1.5rem 4rem rgba($color-black, 0.15);
+
+    @include respond(tab-port) {
+      height: 48rem;
+    }
 
     &--front {
       background-image: linear-gradient(
@@ -87,9 +87,6 @@
     left: 1rem;
     width: 75%;
 
-    @include respond(tab-port) {
-      top: 16.7rem;
-    }
 
     &-span {
       padding: 1rem 1.5rem;
@@ -152,5 +149,60 @@
 
   &__button {
     padding: 2rem 3rem !important;
+  }
+
+  @include respond(tab-port) {
+    &:not(:last-child) {
+      margin-bottom: 10rem;
+    }
+
+    height: auto;
+
+    &__side {
+      height: auto;
+      position: relative;
+      border-radius: 3px;
+
+      &--front {
+        background-image: none;
+        background-color: $color-white-primary;
+      }
+
+      &--back {
+        transform: rotateY(0);
+      }
+    }
+
+    &:hover &__side--front {
+      transform: rotateY(0);
+    }
+
+    &__cta {
+      width: 100%;
+      position: relative;
+      top: 0;
+      left: 0;
+      transform: translate(0);
+      padding: 5rem 4rem;
+    }
+
+    &__price-box {
+      margin-bottom: 3rem;
+    }
+
+    &__price-value {
+      font-size: 6rem;
+      font-weight: 100;
+    }
+
+    &__button {
+      padding: 2rem 3rem !important;
+    }
+  }
+
+  @include respond(phone) {
+    &:not(:last-child) {
+      margin-bottom: 5rem;
+    }
   }
 }

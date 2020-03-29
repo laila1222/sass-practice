@@ -61,7 +61,7 @@
     top: 0;
     left: 0;
     z-index: 1500;
-
+    display: none;
     // not visible when not clicked
     opacity: 0;
     width: 0;
@@ -121,6 +121,7 @@
   }
 
   &__checkbox:checked ~ &__nav {
+    display: block;
     opacity: 1;
     width: 100%;
   }

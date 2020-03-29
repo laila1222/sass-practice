@@ -4,10 +4,19 @@
   font-size: 1.4rem;
   color: $color-grey-light;
 
+  @include respond(tab-port) {
+    padding: 3rem 0 4rem 0;
+  }
+
   &__logo-box {
     text-align: center;
     margin-bottom: 8rem;
+
+    @include respond(tab-port) {
+      margin-bottom: 0;
+    }
   }
+
 
   &__logo {
     width: 25rem;
@@ -24,14 +33,31 @@
   &__container {
     max-width: 114rem;
     margin: 0 auto;
+
+    @include respond(phone) {
+      display: block;
+    }
   }
 
   &__sub-container {
     width: 40%;
+
+    @include respond(phone) {
+      margin-bottom: 3rem;
+    }
   }
 
   &__list {
     list-style: none;
+
+    @include respond(phone) {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      width: 80%;
+      margin: 0 auto;
+      text-align: center;
+    }
   }
 
   &__item {
@@ -40,9 +66,14 @@
     &:not(:last-child) {
       margin-right: 1.5rem;
 
-      @include respond(phone) {
+      @include respond(tab-port) {
         margin-right: 0;
       }
+    }
+
+    @include respond(tab-port) {
+      margin: 0.5rem 1.5rem;
+      text-align: center;
     }
 
     @include respond(phone) {
@@ -79,6 +110,8 @@
 
     @include respond(phone) {
       text-align: center;
+      box-sizing: border-box;
+      padding: 2rem;
     }
   }
 }
