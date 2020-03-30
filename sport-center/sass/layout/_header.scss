@@ -1,25 +1,22 @@
 .header {
+  height: 90vh;
 
-    height: 90vh;
-
-
- &__bg-video {
+  &__bg-video {
     height: 100%;
     width: 100%;
     overflow: hidden;
-    opacity: .95;
+    opacity: 0.95;
     z-index: -1;
     border-radius: 2px;
     box-shadow: 0 0 5px $color-black;
 
-
     &-content {
-        height: 100%;
-        width: 100%;
-        object-fit: cover;
-        object-position: 15% 50%;
+      height: 100%;
+      width: 100%;
+      object-fit: cover;
+      object-position: 15% 50%;
     }
-}
+  }
 
   &__logo-container {
     width: 20rem;
@@ -35,9 +32,6 @@
 
   &__logo {
     filter: invert(100%) brightness(1.5);
-
-
-  
   }
 
   &__text-container {
@@ -46,8 +40,6 @@
   }
 
   &__button-container {
-      margin: 0 auto;
-
+    margin: 0 auto;
   }
-
 }
