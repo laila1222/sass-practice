@@ -9,9 +9,9 @@
 }
 
 .w-90-tablet {
-    @include respond(tab-port) {
-        width: 90% !important;
-      }
+  @include respond(tab-port) {
+    width: 90% !important;
+  }
 }
 
 .w-80-phone {
