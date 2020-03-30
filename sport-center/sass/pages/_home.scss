@@ -9,15 +9,12 @@
   @include respond(phone) {
     padding: 8rem 0;
 
-
     h2 {
       width: 80%;
       margin-left: auto;
       margin-right: auto;
     }
   }
-
-  
 }
 
 .section-features {
@@ -29,6 +26,34 @@
     ),
     url(../images/pool.jpg);
   background-size: cover;
+
+  // @media (min-resolution: 192dpi) and (min-width: 37.5em)   {
+  //   background-image: linear-gradient(
+  //     to right bottom,
+  //     rgba($color-secondary-light, 0.5),
+  //     rgba($color-secondary, 0.5)
+  //   ),
+  //   url(../images/pool.jpg);
+  // }
+
+  // @media (min-width: 125em) {
+  //   background-image: linear-gradient(
+  //     to right bottom,
+  //     rgba($color-secondary-light, 0.5),
+  //     rgba($color-secondary, 0.5)
+  //   ),
+  //   url(../images/pool.jpg);
+
+  // }
+  // Combined these two queries above
+  //  @media (min-resolution: 192dpi) and (min-width: 600px), (min-width: 2000px)   {
+  //   background-image: linear-gradient(
+  //     to right bottom,
+  //     rgba($color-secondary-light, 0.5),
+  //     rgba($color-secondary, 0.5)
+  //   ),
+  //   url(../images/pool.jpg);
+  // }
 
   @include respond(tab-port) {
     padding: 10rem 0;
@@ -65,9 +90,7 @@
   }
 
   .bg-image {
-    background-image: url(../images/relaxation.jpg);
-    // background-position: ;
-    // background-color: burlywood;
+    background-image: url(../images/relaxation-small.jpg);
     background-size: cover;
     background-position: center;
     opacity: 0.2;
@@ -77,6 +100,11 @@
     position: absolute;
     top: 0;
     left: 0;
+
+    @media only screen and (min-resolution: 192dpi) and (min-width: 37.5em),
+      only screen and (min-width: 125em) {
+      background-image: url(../images/relaxation.jpg);
+    }
   }
 }
 
@@ -105,7 +133,7 @@
       rgba($color-white-primary, 0.9) 50%,
       transparent 50%
     ),
-    url(../images/swimming.jpg);
+    url(../images/swimming-small.jpg);
 
   background-size: 100%;
   background-repeat: no-repeat;
@@ -117,6 +145,17 @@
   max-width: 114rem;
   margin: 0 auto;
 
+  @media only screen and (min-resolution: 192dpi) and (min-width: 37.5em),
+    only screen and (min-width: 125em) {
+    background-image: linear-gradient(
+        105deg,
+        rgba($color-white-primary, 0.9) 0%,
+        rgba($color-white-primary, 0.9) 50%,
+        transparent 50%
+      ),
+      url(../images/swimming.jpg);
+  }
+
   @include respond(tab-land) {
     background-image: linear-gradient(
         105deg,
@@ -125,21 +164,18 @@
         transparent 65%
       ),
       url(../images/swimming.jpg);
-      background-size: cover;
-      width: 90%;
+    background-size: cover;
+    width: 90%;
   }
 
   @include respond(tab-port) {
-    background-image: linear-gradient(to right,
-        
-        rgba($color-white-primary, .9) 0%,
-        rgba($color-white-primary, .9) 100%,
-        
+    background-image: linear-gradient(
+        to right,
+        rgba($color-white-primary, 0.9) 0%,
+        rgba($color-white-primary, 0.9) 100%
       ),
       url(../images/swimming.jpg);
-     
   }
-
 
   &__form {
     width: 50%;

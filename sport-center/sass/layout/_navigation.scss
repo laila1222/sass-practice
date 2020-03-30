@@ -18,12 +18,12 @@
 
     @include respond(tab-port) {
       top: 4rem;
-      right: 4rem; 
+      right: 4rem;
     }
 
     @include respond(phone) {
       top: 3rem;
-      right: 3rem; 
+      right: 3rem;
     }
   }
 
@@ -40,18 +40,17 @@
       $color-primary-dark
     );
     z-index: 1000;
-    transition: transform 0.8s cubic-bezier(0.83, 0, 0.17, 1);
+    transition: all 0.8s cubic-bezier(0.83, 0, 0.17, 1);
 
     @include respond(tab-port) {
       top: 4.5rem;
-      right: 4.5rem; 
+      right: 4.5rem;
     }
 
     @include respond(phone) {
       top: 3.5rem;
-      right: 3.5rem; 
+      right: 3.5rem;
     }
-
   }
 
   &__nav {
@@ -116,6 +115,8 @@
     }
   }
 
+  
+
   &__checkbox:checked ~ &__background {
     transform: scale(80);
   }
@@ -124,6 +125,7 @@
     display: block;
     opacity: 1;
     width: 100%;
+    
   }
 
   //   icon
