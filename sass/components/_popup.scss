@@ -110,6 +110,11 @@
       text-decoration: none;
       display: inline-block;
       line-height: 1;
+
+      @include respond(phone) {
+        top: 20rem;
+        right: 1.5rem;
+      }
     }
     &:hover {
       color: $color-primary;
